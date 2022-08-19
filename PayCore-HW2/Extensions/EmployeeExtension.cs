@@ -28,6 +28,7 @@ namespace PayCore_HW2.Extensions
         public static bool Email(string email)
         {
             // Regex ifadesinde özel karakterleri içermeyecek şekilde eşlenme sağlanmıştır.
+            // '-'  '_'  '@' ve '.' ifadelerini kabul eder
             Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
             // Email içerisinde rakam var mı yok mu kontrolü yapılıp result değerine boolean tipte atanır.
             var result = email.Any(x => char.IsDigit(x));
