@@ -30,7 +30,7 @@ namespace PayCore_HW2.Controllers
                    LastName="Akkaya",
                    DateOfBirth=new DateTime(1997,11,24),
                    Email="omerakkaya@outlook.com",
-                   PhoneNumber="+905301429741",
+                   PhoneNumber="+905301449987",
                    Salary=5500
 
                },
@@ -41,7 +41,7 @@ namespace PayCore_HW2.Controllers
                    LastName="Akkaya",
                    DateOfBirth=new DateTime(2001,12,01),
                    Email="keremakkaya@outlook.com",
-                   PhoneNumber="+905462336648",
+                   PhoneNumber="+905462345676",
                    Salary=5500
 
                }

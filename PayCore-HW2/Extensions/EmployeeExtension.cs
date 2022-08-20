@@ -48,10 +48,10 @@ namespace PayCore_HW2.Extensions
         }
         public static bool PhoneNumber(string pnumber)
         {
-            // Telefon numarası rakamlardan mı oluşuyor kontrolü yapılıp result değişkenine boolean atama yapılır.
-            var result = pnumber.Any(x => char.IsDigit(x));
-            // Eğer numara rakamlardan oluşmuş ve + işareti ile başlamızsa true geri dönüş verilir.
-            if (result && pnumber.StartsWith("+"))
+            // Uluslararası telefon numarası regex ifadesidir.
+            // Alan kodu zorunludur (+) işareti ile başlamalıdır.
+            Regex regex = new Regex(@"^\+(?:[0-9]){6,14}[0-9]$");
+            if (regex.IsMatch(pnumber)) // Parametre olarak gelen pnumber regex ile eşleşirse true geri dönüş verir.
             {
                 return true;
             }
